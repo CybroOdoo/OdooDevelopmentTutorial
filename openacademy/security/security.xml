@@ -21,7 +21,7 @@
         <field name="perm_unlink" eval="1"/>
         <field name="domain_force">
             ['|', ('responsible_id','=',False),
-                  ('responsible_id','=',user.id)]
+            ('responsible_id','=',user.id)]
         </field>
     </record>
 
