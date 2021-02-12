@@ -7,7 +7,7 @@
         subtitle on modules listing or apps.openerp.com""",
 
     'description': """
-        Long description of module's purpose cccccccccccc
+        Long description of module's purpose 
     """,
 
     'author': "My Company",
@@ -20,7 +20,6 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    # 'depends': ['base'],
     'depends': ['base', 'board'],
 
     # always loaded
@@ -28,9 +27,9 @@
         'security/security.xml',
         'security/ir.model.access.csv',
         'views/views.xml',
+        'views/openacademy.xml',
         'views/partner.xml',
         'views/templates.xml',
-        'views/openacademy.xml',
         'wizards/wizard_view.xml',
         'reports/report.xml',
         'reports/session_board.xml',
