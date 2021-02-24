@@ -1,39 +1,42 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "openacademy",
+    'name': "Odoo Development Tutorial",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+         Open Academy:Manage trainings""",
 
     'description': """
-        Long description of module's purpose cccccccccccc
+        Open acadaemy module for managing trainings:
+        -Manage student enroll
+        -Attendance registration
+        -Trainer
+        -Training sessions
+        -Courses
+        -More..
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': 'Cybrosys Techno Solutions',
+    'company': 'Cybrosys Techno Solutions',
+    'website': 'https://www.cybrosys.com',
+    'live_test_url': 'https://www.cybrosys.com',
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/13.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
-    'version': '0.1',
+    'category': 'Extra Tools',
+    'version': '13.0.1.0.0',
+    'license': 'AGPL-3',
 
     # any module necessary for this one to work correctly
-    # 'depends': ['base'],
-    'depends': ['base', 'board'],
+    'depends': ['base'],
 
     # always loaded
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/partner.xml',
-        'views/templates.xml',
         'views/openacademy.xml',
-        'wizards/wizard_view.xml',
-        'reports/report.xml',
-        'reports/session_board.xml',
+        'views/partner.xml',
+        'wizard/wizard_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
