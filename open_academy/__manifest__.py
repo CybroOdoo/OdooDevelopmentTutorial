@@ -18,7 +18,7 @@
     'author': 'Cybrosys Techno Solutions',
     'company': 'Cybrosys Techno Solutions',
     'website': 'https://www.cybrosys.com',
-    'live_test_url': 'https://www.cybrosys.com',
+    'live_test_url': 'https://www.cybrosys.com/odoo-development-tutorial/v13/',
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/13.0/odoo/addons/base/data/ir_module_category_data.xml
@@ -29,7 +29,7 @@
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
-
+    'images': ['static/description/banner.png'],
     # always loaded
     'data': [
         'security/security.xml',

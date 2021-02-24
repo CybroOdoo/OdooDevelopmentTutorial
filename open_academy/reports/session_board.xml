@@ -6,13 +6,13 @@
             <field name="res_model">openacademy.session</field>
             <field name="view_mode">graph</field>
             <field name="view_id"
-                   ref="openacademy.openacademy_session_graph_view"/>
+                   ref="open_academy.openacademy_session_graph_view"/>
         </record>
         <record model="ir.actions.act_window" id="act_session_calendar">
             <field name="name">Sessions</field>
             <field name="res_model">openacademy.session</field>
             <field name="view_mode">calendar</field>
-            <field name="view_id" ref="openacademy.session_calendar_view"/>
+            <field name="view_id" ref="open_academy.session_calendar_view"/>
         </record>
         <record model="ir.actions.act_window" id="act_course_list">
             <field name="name">Courses</field>

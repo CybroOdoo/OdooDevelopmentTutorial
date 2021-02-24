@@ -8,13 +8,13 @@
 
     <record id="group_openacademy_manager" model="res.groups">
         <field name="name">OpenAcademy / Manager</field>
-        <field name="category_id" ref="openacademy.module_category_openacademy"/>
+        <field name="category_id" ref="open_academy.module_category_openacademy"/>
     </record>
 
     <record id="only_responsible_can_modify" model="ir.rule">
         <field name="name">Only Responsible can modify Course</field>
         <field name="model_id" ref="model_openacademy_course"/>
-        <field name="groups" eval="[(4, ref('openacademy.group_openacademy_manager'))]"/>
+        <field name="groups" eval="[(4, ref('open_academy.group_openacademy_manager'))]"/>
         <field name="perm_read" eval="0"/>
         <field name="perm_write" eval="1"/>
         <field name="perm_create" eval="0"/>

@@ -4,8 +4,8 @@
         id="report_session"
         model="openacademy.session"
         string="Session Report"
-        name="openacademy.report_session_view"
-        file="openacademy.report_session"
+        name="open_academy.report_session_view"
+        file="open_academy.report_session"
         report_type="qweb-pdf"
         attachment = "True"
     />
