@@ -9,6 +9,7 @@
     <record id="group_openacademy_manager" model="res.groups">
         <field name="name">OpenAcademy / Manager</field>
         <field name="category_id" ref="open_academy.module_category_openacademy"/>
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
     </record>
 
     <record id="only_responsible_can_modify" model="ir.rule">
