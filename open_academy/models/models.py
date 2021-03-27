@@ -6,14 +6,14 @@ from odoo import models, fields, api, exceptions
 
 
 class Course(models.Model):
-    _name = 'open_academy.course'
+    _name = 'openacademy.course'
     _description = "OpenAcademy Courses"
 
     name = fields.Char(string="Title", required=True)
     description = fields.Text()
 
     responsible_id = fields.Many2one('res.users', string='Responsible', ondelete='set null', index=True)
-    session_ids = fields.One2many('open_academy.session', 'course_id', string="Sessions")
+    session_ids = fields.One2many('openacademy.session', 'course_id', string="Sessions")
 
     _sql_constraints = [
         ('name_description_check',
@@ -27,7 +27,7 @@ class Course(models.Model):
 
 
 class Session(models.Model):
-    _name = 'open_academy.session'
+    _name = 'openacademy.session'
     _description = "OpenAcademy Sessions"
 
     name = fields.Char(required=True)
@@ -36,7 +36,7 @@ class Session(models.Model):
     seats = fields.Integer(string="Number of seats")
 
     instructor_id = fields.Many2one('res.partner', string='Instructor')
-    course_id = fields.Many2one('open_academy.course', string='Course', ondelete='cascade', required=True)
+    course_id = fields.Many2one('openacademy.course', string='Course', ondelete='cascade', required=True)
     attendee_ids = fields.Many2many('res.partner', string="Attendees")
     active = fields.Boolean(default=True)
 
