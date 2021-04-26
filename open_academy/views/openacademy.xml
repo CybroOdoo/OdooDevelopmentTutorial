@@ -151,23 +151,26 @@
             <field name="model">openacademy.session</field>
             <field name="arch" type="xml">
                 <gantt string="Session Gantt"
-                       date_start="start_date" date_stop="end_date" color="instructor_id" edit="false" plan="false" offset="-1"
+                       date_start="start_date" date_stop="end_date" color="instructor_id" create="false" edit="false" plan="false" offset="1" progress="taken_seats"
                        default_group_by='instructor_id'>
                 </gantt>
             </field>
         </record>
 
+        <!-- graph view -->
         <record model="ir.ui.view" id="openacademy_session_graph_view">
             <field name="name">openacademy.session.graph</field>
             <field name="model">openacademy.session</field>
             <field name="arch" type="xml">
-                <graph string="Participations by Courses" type="line" disable_linking="true">
+                <graph string="Participations by Courses">
                     <field name="course_id"/>
                     <field name="attendees_count" type="measure"/>
                 </graph>
             </field>
         </record>
 
+
+        <!-- kanban view -->
         <record model="ir.ui.view" id="view_openacad_session_kanban">
             <field name="name">openacademy.session.kanban</field>
             <field name="model">openacademy.session</field>
@@ -214,6 +217,7 @@
             </field>
         </record>
 
+
         <record model="ir.actions.act_window" id="session_list_action">
             <field name="name">Sessions</field>
             <field name="res_model">openacademy.session</field>
@@ -223,6 +227,33 @@
         <menuitem id="session_menu" name="Sessions"
                   parent="openacademy_menu"
                   action="session_list_action"/>
+
+        <record model="ir.ui.view" id="wizard_form_view">
+            <field name="name">wizard.form</field>
+            <field name="model">openacademy.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Add Attendees">
+                    <group>
+                        <field name="session_ids"/>
+                        <field name="attendee_ids"/>
+                    </group>
+                    <footer>
+                        <button name="subscribe" type="object"
+                                string="Subscribe" class="oe_highlight"/>
+                        or
+                        <button special="cancel" string="Cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="launch_session_wizard" model="ir.actions.act_window">
+            <field name="name">Add Attendees</field>
+            <field name="res_model">openacademy.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="binding_model_id" ref="model_openacademy_session"/>
+        </record>
 
 
 </odoo>
