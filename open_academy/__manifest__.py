@@ -29,7 +29,7 @@
 
     # any module necessary for this one to work correctly
     'depends': ['base', 'website_slides'],
-    'images': ['static/description/banner.png'],
+    'images': ['static/description/banner.gif'],
     # always loaded
     'data': [
         'security/security.xml',
