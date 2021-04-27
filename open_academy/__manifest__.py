@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Odoo Development Tutorial",
+    'name': "Odoo 13 Development Tutorial",
 
     'summary': """
-         Open Academy:Manage trainings""",
+         Odoo 13 Development Tutorials""",
 
     'description': """
         Open acadaemy module for managing trainings:
