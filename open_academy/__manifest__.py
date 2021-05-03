@@ -1,11 +1,16 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Odoo 13 And 14 Development Tutorial",
+    'name': "Odoo 14 Development Tutorial",
 
     'summary': """
         Odoo 13 And 14 Development Tutorial""",
 
     'description': """
+        Odoo 14 Development Tutorial,
+        Odoo 13 Development Tutorial,
+        Development Tutorial,
+        Odoo Tutorial,
+        Odoo13, Odoo14, odoo Tutorials, odoo learning, odoo13 Tutorials, odoo14 Tutorials, Tutorial,
         Open acadaemy module for managing trainings:
         -Manage student enroll
         -Attendance registration
