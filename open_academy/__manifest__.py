@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Odoo 14 Development Tutorial",
+    'name': "Odoo 13 And 14 Development Tutorial",
 
     'summary': """
-        Odoo 14 Development Tutorials""",
+        Odoo 13 And 14 Development Tutorial""",
 
     'description': """
         Open acadaemy module for managing trainings:
@@ -24,7 +24,7 @@
     # Check https://github.com/odoo/odoo/blob/13.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'Extra Tools',
-    'version': '14.0.1.2.0',
+    'version': '14.0.1.3.0',
     'license': 'AGPL-3',
 
     # any module necessary for this one to work correctly
@@ -33,6 +33,8 @@
 
     # always loaded
     'data': [
+        'data/slide_channel_data.xml',
+        'data/slide_channel_data_v13.xml',
         'security/security.xml',
         'security/ir.model.access.csv',
         'views/views.xml',
@@ -41,7 +43,6 @@
         'views/partner.xml',
         'views/session_board.xml',
         'reports.xml',
-        'data/slide_channel_data.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

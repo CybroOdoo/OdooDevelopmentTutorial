@@ -5,7 +5,7 @@
         <field name="name">Odoo 14 Development Tutorial</field>
         <field name="user_id" ref="base.user_admin"/>
         <field name="enroll">public</field>
-        <field name="sequence">0</field>
+        <field name="sequence">1</field>
         <field name="channel_type">training</field>
         <field name="allow_comment" eval="False"/>
         <field name="promote_strategy">most_voted</field>
