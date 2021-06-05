@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Odoo 13 Development Tutorial",
+    'name': "Odoo 13 Development Tutorials",
 
     'summary': """
          Odoo 13 Development Tutorials""",
