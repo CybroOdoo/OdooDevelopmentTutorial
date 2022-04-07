@@ -50,7 +50,7 @@
         <record id="slide_slide_odoo14_tips_3" model="slide.slide">
             <field name="name">3-How to Create a Custom Module in Odoo</field>
             <field name="sequence">3</field>
-            <field name="url">https://youtu.be/Ul0UAfftR78</field>
+            <field name="url">https://youtu.be/TiJ__I77CyE</field>
             <field name="slide_type">video</field>
             <field name="channel_id" ref="open_academy.slide_channel_odoo14_technical_tips"/>
             <field name="is_published" eval="True"/>
@@ -149,7 +149,7 @@
         <record id="slide_slide_odoo14_tips_14" model="slide.slide">
             <field name="name">14-Odoo Owl Framework</field>
             <field name="sequence">14</field>
-            <field name="url">https://youtu.be/dki4s_akje0</field>
+            <field name="url">https://youtu.be/ZxEhlOoYmWw</field>
             <field name="slide_type">video</field>
             <field name="channel_id" ref="open_academy.slide_channel_odoo14_technical_tips"/>
             <field name="is_published" eval="True"/>
@@ -191,9 +191,19 @@
             <field name="is_published" eval="True"/>
             <field name="is_preview" eval="True"/>
         </record>
+
         <record id="slide_slide_odoo14_tips_19" model="slide.slide">
-            <field name="name">19-How to Install Odoo 14 on Ubuntu 20.04</field>
+            <field name="name">19-How to Install Odoo 15 on Ubuntu 20.04</field>
             <field name="sequence">19</field>
+            <field name="url">https://youtu.be/mlvJCfxNKDE</field>
+            <field name="slide_type">video</field>
+            <field name="channel_id" ref="open_academy.slide_channel_odoo14_technical_tips"/>
+            <field name="is_published" eval="True"/>
+            <field name="is_preview" eval="True"/>
+        </record>
+        <record id="slide_slide_odoo14_tips_20" model="slide.slide">
+            <field name="name">20-How to Install Odoo 14 on Ubuntu 20.04</field>
+            <field name="sequence">20</field>
             <field name="url">https://youtu.be/ud0z9GB6phs</field>
             <field name="slide_type">video</field>
             <field name="channel_id" ref="open_academy.slide_channel_odoo14_technical_tips"/>
@@ -201,18 +211,18 @@
             <field name="is_preview" eval="True"/>
         </record>
 
-        <record id="slide_slide_odoo14_tips_20" model="slide.slide">
-            <field name="name">20-How to Install Odoo 13 on Ubuntu 18.04</field>
-            <field name="sequence">20</field>
+        <record id="slide_slide_odoo14_tips_21" model="slide.slide">
+            <field name="name">21-How to Install Odoo 13 on Ubuntu 18.04</field>
+            <field name="sequence">21</field>
             <field name="url">https://youtu.be/d4AaniD_UDY</field>
             <field name="slide_type">video</field>
             <field name="channel_id" ref="open_academy.slide_channel_odoo14_technical_tips"/>
             <field name="is_published" eval="True"/>
             <field name="is_preview" eval="True"/>
         </record>
-        <record id="slide_slide_odoo14_tips_21" model="slide.slide">
-            <field name="name">21-How to Configure Odoo 12 on Pycharm Ubuntu 18</field>
-            <field name="sequence">21</field>
+        <record id="slide_slide_odoo14_tips_22" model="slide.slide">
+            <field name="name">22-How to Configure Odoo 12 on Pycharm Ubuntu 18</field>
+            <field name="sequence">22</field>
             <field name="url">https://youtu.be/qri0ZF8kUhU</field>
             <field name="slide_type">video</field>
             <field name="channel_id" ref="open_academy.slide_channel_odoo14_technical_tips"/>
@@ -220,9 +230,9 @@
             <field name="is_preview" eval="True"/>
         </record>
 
-        <record id="slide_slide_odoo14_tips_22" model="slide.slide">
-            <field name="name">22-How to Create Smart Button in Odoo 14</field>
-            <field name="sequence">22</field>
+        <record id="slide_slide_odoo14_tips_23" model="slide.slide">
+            <field name="name">23-How to Create Smart Button in Odoo 14</field>
+            <field name="sequence">23</field>
             <field name="url">https://youtu.be/4_5Ia2wwrNo</field>
             <field name="slide_type">video</field>
             <field name="channel_id" ref="open_academy.slide_channel_odoo14_technical_tips"/>
